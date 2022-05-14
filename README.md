@@ -21,6 +21,7 @@ now we have a coco format voc dataset for further training and evaluation
 python tools/train.py configs/faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py --gpus 1 --work-dir faster_rcnn # this command only supports single GPU training
 ```
 losses and evaluation results will be strored at mmdet_VOC/faster_rcnn/\*.log.json, the model will save latest checkpoint after every epoch and evaluate by then
+
 you can use tensorboard to check the loss curves during the training process
 ```
 # create logfile
