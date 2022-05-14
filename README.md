@@ -34,6 +34,13 @@ test the performance of the model
 ```
 python tools/test.py configs/faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py faster_rcnn/latest.pth --work-dir faster_rcnn --eval bbox`
 ```
+inference images
+```
+python inference.py # remember to modify config_file, checkpoint_file and imgs
+# if u don't offer out_file when using show_result_pyplot(), inference img will be shown to screen
+```
+
+
 ## 4. train and evaluate yolov3
 commands are similar to the previous section, remenber to use configs/yolo/yolov3_d53_mstrain-608_273e_coco.py as your config file, and modify offered scripts for visualization and inference if u need.
 
