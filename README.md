@@ -4,6 +4,8 @@ this repository is designed for training Faster RCNN and YOLOv3 models on PASCAL
 please refer to https://github.com/open-mmlab/mmdetection
 
 ## 2. prepare dataset
+download this reporitory
+
 download pascal-voc dataset and place it to mmdet_VOC/data
 run the given scripts to switch the VOC data format to COCO data format
 ```
