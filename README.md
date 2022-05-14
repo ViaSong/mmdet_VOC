@@ -35,10 +35,11 @@ python tools/test.py configs/faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py faster_r
 commands are similar to the previous section, remenber to use configs/yolo/yolov3_d53_mstrain-608_273e_coco.py as your config file, and modify offered scripts for visualization and inference if u need.
 
 ## 5. my model
-you can download my pretrained model(PASCAL2007 dataset) from Baidu NetDisk https://pan.baidu.com/s/15K6iNJncWQVtIncFi7HMlg}, access code is s7c7.
+you can download my pretrained model(PASCAL2007 dataset) from Baidu NetDisk https://pan.baidu.com/s/15K6iNJncWQVtIncFi7HMlg, access code is s7c7.
 
 ## 6. tips
 given codes only support training and inference on PASCAL-VOC dataset, if u want to use your own dataset, remember to organize them in COCO format or just organize them in PASCAL-VOC format and switch to COCO format using given voc_to_coco.py script. and then please make sure that u change the dataset classes written in the config file to avoid error.
+
 if you want to visualize the proposals given by the RPN module in faster rcnn, u can check ~/anaconda/envs/openmmlab/python3.7/site-packages/mmdet/detectors/two_stage.py and add the following code before the return line of function simple_test()
 ```
 #######################################
